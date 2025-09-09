@@ -67,7 +67,7 @@ pipeline {
                 echo "📁 Copying JAR to C:\\ drive..."
 
                 // Copy the renamed JAR to C:\ directly
-                bat "copy target\\${NEW_JAR_NAME} h:\\ofssapp\\${NEW_JAR_NAME}"
+                bat "copy target\\${NEW_JAR_NAME} C:\\${NEW_JAR_NAME}"
             }
         }
     }
