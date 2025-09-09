@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/softbank/api/accounts")
 public class ApplicationController {
 
     @GetMapping("oracle")
@@ -14,7 +13,7 @@ public class ApplicationController {
     }
 
     @GetMapping
-    public String print() {
+    public String printG() {
         return "Hi Guest !!";
     }
 }
