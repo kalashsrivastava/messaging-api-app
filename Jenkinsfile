@@ -67,7 +67,7 @@ pipeline {
                 echo "📁 Copying JAR to C:\\ drive..."
 
                 // Copy the renamed JAR to C:\ directly
-                bat "copy \Y target\\${NEW_JAR_NAME} C:\\"
+                bat "copy target\\${NEW_JAR_NAME} C:\\"
             }
         }
     }
